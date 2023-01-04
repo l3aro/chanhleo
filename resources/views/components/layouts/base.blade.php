@@ -40,6 +40,10 @@
 
     <!-- Modernizr JS -->
     <script src="{{ asset('landing/js/modernizr-2.6.2.min.js') }}"></script>
+
+    <!-- Sweet Alert 2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @livewireStyles
 </head>
 
 <body>
@@ -51,39 +55,7 @@
 
         {{ $slot }}
 
-        <div id="fh5co-started" class="fh5co-bg"
-            style="background-image:url({{ asset('landing/images/img_bg_4.jpg') }});">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row animate-box">
-                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                        <h2>Are You Attending?</h2>
-                        <p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
-                    </div>
-                </div>
-                <div class="row animate-box">
-                    <div class="col-md-10 col-md-offset-1">
-                        <form class="form-inline">
-                            <div class="col-md-4 col-sm-4">
-                                <div class="form-group">
-                                    <label for="name" class="sr-only">Name</label>
-                                    <input type="name" class="form-control" id="name" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="form-group">
-                                    <label for="email" class="sr-only">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <button type="submit" class="btn btn-default btn-block">I am Attending</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <livewire:attending-form />
 
         <footer id="fh5co-footer" role="contentinfo">
             <div class="container">
@@ -148,15 +120,16 @@
             day: d.getDate()
         });
 
-        //jQuery example
-        $('#simply-countdown-losange').simplyCountdown({
-            year: d.getFullYear(),
-            month: d.getMonth() + 1,
-            day: d.getDate(),
-            enableUtc: false
-        });
+        window.addEventListener('attending-success', event => {
+            Swal.fire(
+                event.detail.title,
+                event.detail.content,
+                'success'
+            )
+        })
     </script>
 
+    @livewireScripts
 </body>
 
 </html>
