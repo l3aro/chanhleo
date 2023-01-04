@@ -11,7 +11,7 @@
                             <h1>Joefrey &amp; Sheila</h1>
                             <h2>We Are Getting Married</h2>
                             <div class="simply-countdown simply-countdown-one"></div>
-                            <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+                            <p><a href="#fh5co-started" class="btn btn-default btn-sm">Register</a></p>
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,9 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                     <h2>Hello!</h2>
-                    <h3>November 28th, 2016 New York, USA</h3>
+                    <h3>
+                        {{ dday()->format('l jS F Y h:i A') }} {{ location() }}
+                    </h3>
                     <p>We invited you to celebrate our wedding</p>
                 </div>
             </div>
@@ -59,8 +61,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                    <span>Our Special Events</span>
                     <h2>Wedding Events</h2>
+                    <span>{{ location(true) }}</span>
                 </div>
             </div>
             <div class="row">
@@ -72,13 +74,13 @@
                                     <h3>Main Ceremony</h3>
                                     <div class="event-col">
                                         <i class="icon-clock"></i>
-                                        <span>4:00 PM</span>
-                                        <span>6:00 PM</span>
+                                        <span>5:00 PM</span>
+                                        <span>7:00 PM</span>
                                     </div>
                                     <div class="event-col">
                                         <i class="icon-calendar"></i>
-                                        <span>Monday 28</span>
-                                        <span>November, 2016</span>
+                                        <span>{{ dday()->format('l jS') }}</span>
+                                        <span>{{ dday()->format('F, Y') }}</span>
                                     </div>
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and
                                         Consonantia, there live the blind texts. Separated they live in
@@ -96,8 +98,8 @@
                                     </div>
                                     <div class="event-col">
                                         <i class="icon-calendar"></i>
-                                        <span>Monday 28</span>
-                                        <span>November, 2016</span>
+                                        <span>{{ dday()->format('l jS') }}</span>
+                                        <span>{{ dday()->format('F, Y') }}</span>
                                     </div>
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and
                                         Consonantia, there live the blind texts. Separated they live in

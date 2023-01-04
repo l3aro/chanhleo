@@ -23,7 +23,9 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                     <h2>Hello!</h2>
-                    <h3>November 28th, 2016 New York, USA</h3>
+                    <h3>
+                        {{ dday()->format('l jS F Y h:i A') }} {{ location() }}
+                    </h3>
                     <p>We invited you to celebrate our wedding</p>
                 </div>
             </div>

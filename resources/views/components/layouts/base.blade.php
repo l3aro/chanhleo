@@ -111,13 +111,12 @@
     <script src="{{ asset('landing/js/main.js') }}"></script>
 
     <script>
-        var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-
         // default example
         simplyCountdown('.simply-countdown-one', {
-            year: d.getFullYear(),
-            month: d.getMonth() + 1,
-            day: d.getDate()
+            year: 2023,
+            month: 2,
+            day: 25,
+            hour: 17,
         });
 
         window.addEventListener('attending-success', event => {
