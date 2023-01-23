@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Trần Tiến & Tú Anh Wedding</title>
 
     <meta property="og:title" content="" />
     <meta property="og:image" content="" />
@@ -63,18 +63,18 @@
                 <div class="row copyright">
                     <div class="col-md-12 text-center">
                         <p>
-                            <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-                            <small class="block">Designed by <a href="http://freehtml5.co/"
-                                    target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.co/"
-                                    target="_blank">Unsplash</a></small>
+                            <small class="block">&copy; 2023 Rezonia Team. All Rights Reserved.</small>
+                            <small class="block">Made by <a href="https://3ro.rezonia.com/vi"
+                                    target="_blank">3ro</a>. Edited by <a href="https://leo.rezonia.com"
+                                    target="_blank">Leo</a></small>
                         </p>
                         <p>
-                        <ul class="fh5co-social-icons">
-                            <li><a href="#"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                        </ul>
+                        <!--<ul class="fh5co-social-icons">-->
+                        <!--    <li><a href="#"><i class="icon-twitter"></i></a></li>-->
+                        <!--    <li><a href="#"><i class="icon-facebook"></i></a></li>-->
+                        <!--    <li><a href="#"><i class="icon-linkedin"></i></a></li>-->
+                        <!--    <li><a href="#"><i class="icon-dribbble"></i></a></li>-->
+                        <!--</ul>-->
                         </p>
                     </div>
                 </div>

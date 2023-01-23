@@ -8,10 +8,10 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <div class="display-t">
                         <div class="display-tc animate-box" data-animate-effect="fadeIn">
-                            <h1>Joefrey &amp; Sheila</h1>
-                            <h2>We Are Getting Married</h2>
+                            <h1>Leo &amp; Helen</h1>
+                            <h2>Đám cưới sẽ bắt đầu</h2>
                             <div class="simply-countdown simply-countdown-one"></div>
-                            <p><a href="#fh5co-started" class="btn btn-default btn-sm">Register</a></p>
+                            <p><a href="#" class="js-goalbum btn btn-default btn-sm">Xem Album Ảnh</a></p>
                         </div>
                     </div>
                 </div>
@@ -24,10 +24,10 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                     <h2>Hello!</h2>
+                    <p>Xin trân trọng kính mới anh chị/cô chú/ông bà tới tham dự đám cưới của<br>Trần Tiến và Tú Anh</p>
                     <h3>
                         {{ dday()->format('l jS F Y h:i A') }} {{ location() }}
                     </h3>
-                    <p>We invited you to celebrate our wedding</p>
                 </div>
             </div>
             <div class="couple-wrap animate-box">
@@ -36,9 +36,9 @@
                         <img src="{{ asset('landing/images/groom.jpg') }}" alt="groom" class="img-responsive">
                     </div>
                     <div class="desc-groom">
-                        <h3>Joefrey Mahusay</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove</p>
+                        <h3>Đặng</h3>
+                        <h3>Trần Tiến</h3>
+                        <p>Chú rể <strong>Trần Tiến</strong>, hay còn được mọi người gọi là <strong>Trần Leo</strong>. Ngoài giỏi IT, thì còn có sở trường ca hát, vì vậy Chú Rể thường hay nói: "Leo mà không làm IT, thì Leo đã đi làm Ca Sĩ rồi"</p>
                     </div>
                 </div>
                 <p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -47,9 +47,9 @@
                         <img src="{{ asset('landing/images/bride.jpg') }}" alt="groom" class="img-responsive">
                     </div>
                     <div class="desc-bride">
-                        <h3>Sheila Mahusay</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove</p>
+                        <h3>Trần</h3>
+                        <h3>Tú Anh</h3>
+                        <p>Cô dâu xinh đẹp <strong>Tú Anh</strong>, hay còn được mọi người gọi là <strong>Bé Chanh</strong>. Là một bông hoa xinh đẹp của miền đất Hải Dương. Rất giỏi trong việc nhõng nhẽo chú rể.</p>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,10 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                     <h2>Wedding Events</h2>
-                    <span>{{ location(true) }}</span>
+                    <!--<span>{{ location(true, false) }}</span>-->
+                    <span>Hội Trường 2, Trung tâm tiệc cưới Golden Palace</span>
+                    </br>
+                    <span>(Tầng 3 - TTTM Mipec Long Biên, Hà Nội, VN)</span>
                 </div>
             </div>
             <div class="row">
@@ -71,39 +74,35 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="col-md-6 col-sm-6 text-center">
                                 <div class="event-wrap animate-box">
-                                    <h3>Main Ceremony</h3>
+                                    <h3>Lễ Rước Dâu</h3>
                                     <div class="event-col">
                                         <i class="icon-clock"></i>
-                                        <span>5:00 PM</span>
-                                        <span>7:00 PM</span>
+                                        <span>05:00 SÁNG</span>
+                                        <span>11:00 TRƯA</span>
                                     </div>
                                     <div class="event-col">
                                         <i class="icon-calendar"></i>
                                         <span>{{ dday()->format('l jS') }}</span>
                                         <span>{{ dday()->format('F, Y') }}</span>
                                     </div>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in
-                                        Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                                    <p>Lễ Rước Dâu sẽ được khởi hành từ sáng sớm tại nhà Chú Rể ở Long Biên để di chuyển tới nhà Cô Dâu tại thị xã Kinh Môn - Hải Dương. Dự kiến đoàn Rước Dâu sẽ đưa Cô Dâu về HN vào khoảng 11h trưa.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6 text-center">
                                 <div class="event-wrap animate-box">
-                                    <h3>Wedding Party</h3>
+                                    <h3>Tiệc Đám Cưới</h3>
                                     <div class="event-col">
                                         <i class="icon-clock"></i>
-                                        <span>7:00 PM</span>
-                                        <span>12:00 AM</span>
+                                        <span>05:00 CHIỀU</span>
+                                        <span>07:00 CHIỀU</span>
                                     </div>
                                     <div class="event-col">
                                         <i class="icon-calendar"></i>
                                         <span>{{ dday()->format('l jS') }}</span>
                                         <span>{{ dday()->format('F, Y') }}</span>
                                     </div>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in
-                                        Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                                    <p>Bữa tiệc chính thức chúc mừng hạnh phúc Cô Dâu - Chú Dể sẽ được diễn ra vào khoảng 5h chiều tại Trung Tâm Tiệc Cưới - Tầng 3 - TTTM MIPEC Long Biên. Rất mong sự có mặt của các vị quan khách.
                                     </p>
                                 </div>
                             </div>
@@ -114,7 +113,68 @@
         </div>
     </div>
 
-    <div id="fh5co-couple-story">
+
+    <div id="fh5co-services">
+        <div class="container">
+
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <h2>Sweet Video</h2>
+                    <p>Màn cầu hôn tuyệt vời của Chú Rể dành cho Cô Dâu vào ngày 25/12/2022 trên tầng cao của quán cafe Sam Rooftop.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <!--<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+                        <span class="icon">
+                            <i class="icon-calendar"></i>
+                        </span>
+                        <div class="feature-copy">
+                            <h3>We Organized Events</h3>
+                            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
+                                cumque dicta adipisci architecto culpa amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+                        <span class="icon">
+                            <i class="icon-image"></i>
+                        </span>
+                        <div class="feature-copy">
+                            <h3>Photoshoot</h3>
+                            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
+                                cumque dicta adipisci architecto culpa amet.</p>
+                        </div>
+                    </div>-->
+
+                    <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+                        <span class="icon">
+                            <i class="icon-video"></i>
+                        </span>
+                        <div class="feature-copy">
+                            <h3>Video Editor</h3>
+                            <p>Cảm ơn bạn <b>@Khắc Việt</b> đã quay và chỉnh sửa video này tặng cho Cô Dâu và Chú Rể.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-8 animate-box">
+                    <div class="fh5co-video fh5co-bg"
+                        style="background-image: url({{ asset('landing/images/video_preview.jpg') }}); ">
+                        <a href="https://www.youtube.com/watch?v=i9nyh_voeT8" class="popup-vimeo"><i
+                                class="icon-video2"></i></a>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+    <!--<div hidden id="fh5co-couple-story">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -179,7 +239,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <div id="fh5co-gallery" class="fh5co-section-gray">
         <div class="container">
@@ -287,7 +347,7 @@
         </div>
     </div>
 
-    <div id="fh5co-counter" class="fh5co-bg fh5co-counter"
+    <!--<div hidden id="fh5co-counter" class="fh5co-bg fh5co-counter"
         style="background-image:url({{ asset('landing/images/img_bg_5.jpg') }});">
         <div class="overlay"></div>
         <div class="container">
@@ -345,7 +405,7 @@
         </div>
     </div>
 
-    <div id="fh5co-testimonial">
+    <div hidden id="fh5co-testimonial">
         <div class="container">
             <div class="row">
                 <div class="row animate-box">
@@ -403,69 +463,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="fh5co-services" class="fh5co-section-gray">
-        <div class="container">
-
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <h2>We Offer Services</h2>
-                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-                        provident. Odit ab aliquam dolor eius.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-                        <span class="icon">
-                            <i class="icon-calendar"></i>
-                        </span>
-                        <div class="feature-copy">
-                            <h3>We Organized Events</h3>
-                            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
-                                cumque dicta adipisci architecto culpa amet.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-                        <span class="icon">
-                            <i class="icon-image"></i>
-                        </span>
-                        <div class="feature-copy">
-                            <h3>Photoshoot</h3>
-                            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
-                                cumque dicta adipisci architecto culpa amet.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-                        <span class="icon">
-                            <i class="icon-video"></i>
-                        </span>
-                        <div class="feature-copy">
-                            <h3>Video Editing</h3>
-                            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos
-                                cumque dicta adipisci architecto culpa amet.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 animate-box">
-                    <div class="fh5co-video fh5co-bg"
-                        style="background-image: url({{ asset('landing/images/img_bg_3.jpg') }}); ">
-                        <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i
-                                class="icon-video2"></i></a>
-                        <div class="overlay"></div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
+    </div>-->
 
 
 

@@ -122,11 +122,11 @@
                 minutes: 0,
                 seconds: 0,
                 words: {
-                    days: 'day',
-                    hours: 'hour',
-                    minutes: 'minute',
-                    seconds: 'second',
-                    pluralLetter: 's'
+                    days: 'Ngày',
+                    hours: 'Giờ',
+                    minutes: 'Phút',
+                    seconds: 'Giây',
+                    pluralLetter: ''
                 },
                 plural: true,
                 inline: false,

@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row animate-box" wire:ignore.self>
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                <h2>Are You Attending?</h2>
-                <p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+                <h2>Bạn sẽ tham dự chứ?</h2>
+                <p>Hãy điền thông tin và gửi cho cô Dâu, chú Rể nếu bạn sẽ đến tham dự nhé. <3</p>
             </div>
         </div>
         <div class="row animate-box" wire:ignore.self>
@@ -13,7 +13,7 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="form-group">
                             <label for="name" class="sr-only">Name</label>
-                            <input type="name" class="form-control" id="name" placeholder="Name" wire:model.defer="name">
+                            <input type="name" class="form-control" id="name" placeholder="Họ tên" wire:model.defer="name">
                             @error('name')
                                 <small style="color: red">{{ $message }}</small>
                             @enderror
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <button type="submit" class="btn btn-default btn-block">I am Attending</button>
+                        <button type="submit" class="btn btn-default btn-block">Tôi sẽ tham dự</button>
                     </div>
                 </form>
             </div>

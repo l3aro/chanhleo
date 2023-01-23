@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'sacramento-vn';
+  src: url("../fonts/sacramento-vn/UNI_DA_Sacramento.ttf");
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -103,7 +107,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "sacramento-vn", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -318,6 +322,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
+    background-image: url('/landing/images/img_bg_2_vertical.jpg') !important;
   }
 }
 .fh5co-cover .display-t,
@@ -844,7 +849,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "sacramento-vn", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -1000,6 +1005,7 @@ form label {
 #fh5co-gallery,
 .fh5co-section {
   padding: 7em 0;
+  padding-top: 2em !important;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1065,7 +1071,7 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
+  font-family: "sacramento-vn", Arial, serif;
   color: #F14E95;
   font-size: 30px;
 }
@@ -1182,7 +1188,7 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "sacramento-vn", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {

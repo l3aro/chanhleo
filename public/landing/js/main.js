@@ -182,6 +182,21 @@
 	
 	};
 
+	var goToAlbum = function() {
+
+		$('.js-goalbum').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('#fh5co-services').offset().top
+			}, 1000);
+			
+			return false;
+		});
+	
+	};
+
 
 	// Loading page
 	var loaderPage = function() {
@@ -223,6 +238,7 @@
 		dropdown();
 		testimonialCarousel();
 		goToTop();
+		goToAlbum();
 		loaderPage();
 		counter();
 		counterWayPoint();
