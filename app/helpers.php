@@ -10,10 +10,14 @@ if (! function_exists('dday')) {
 }
 
 if (! function_exists('location')) {
-    function location(bool $full = false)
+    function location(bool $full = false, bool $en = true)
     {
         if ($full) {
-            return 'Hall 2, Golden Palace Wedding Center, 3rd Floor, Mipec Long Bien Trade Center, Hanoi, VN.';
+            if ($en) {
+                return 'Hall 2, Golden Palace Wedding Center, 3rd Floor, Mipec Long Bien Trade Center, Hanoi, VN.';
+            } else {
+                return 'Hội Trường 2, TT tiệc cưới Golden Palace, Tầng 3 - TTTM Mipec Long Biên, Hà Nội, VN.';
+            }
         }
 
         return 'Hanoi, VN';
