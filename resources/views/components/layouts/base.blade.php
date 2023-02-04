@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Trần Tiến & Tú Anh Wedding</title>
+    <title>Trần Tiến &hearts; Tú Anh - Wedding</title>
 
     <meta property="og:title" content="" />
     <meta property="og:image" content="" />
@@ -17,6 +17,7 @@
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
 
+    <link rel=icon type=image/png sizes=32x32 href="{{ asset('favicon.png') }}">
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
         type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
@@ -30,6 +31,9 @@
 
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="{{ asset('landing/css/magnific-popup.css') }}">
+    
+    <!-- justifiedGallery -->
+    <link rel="stylesheet" href="{{ asset('landing/css/justifiedGallery.css') }}">
 
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="{{ asset('landing/css/owl.carousel.min.css') }}">
@@ -37,6 +41,9 @@
 
     <!-- Theme style  -->
     <link rel="stylesheet" href="{{ asset('landing/css/style.css') }}">
+    
+    <!-- lightGallery -->
+    <link type="text/css" rel="stylesheet" href="{{ asset('landing/css/lightgallery-bundle.css') }}" />
 
     <!-- Modernizr JS -->
     <script src="{{ asset('landing/js/modernizr-2.6.2.min.js') }}"></script>
@@ -99,14 +106,21 @@
     <script src="{{ asset('landing/js/owl.carousel.min.js') }}"></script>
     <!-- countTo -->
     <script src="{{ asset('landing/js/jquery.countTo.js') }}"></script>
-
     <!-- Stellar -->
     <script src="{{ asset('landing/js/jquery.stellar.min.js') }}"></script>
     <!-- Magnific Popup -->
     <script src="{{ asset('landing/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('landing/js/magnific-popup-options.js') }}"></script>
+    <!-- justifiedGallery -->
+    <script src="{{ asset('landing/js/jquery.justifiedGallery.js') }}"></script>
 
     <script src="{{ asset('landing/js/simplyCountdown.js') }}"></script>
+    <!-- lightGallery -->
+    <script src="{{ asset('landing/js/lightgallery.umd.js') }}"></script>
+    <!-- lightgallery plugins -->
+    <script src="{{ asset('landing/js/plugins/lg-thumbnail.umd.js') }}"></script>
+    <script src="{{ asset('landing/js/plugins/lg-zoom.umd.js') }}"></script>
+    
     <!-- Main -->
     <script src="{{ asset('landing/js/main.js') }}"></script>
 
@@ -127,6 +141,56 @@
             )
         })
     </script>
+    
+    <script type="text/javascript">
+        $("#animated-thumbnails-gallery").justifiedGallery({
+            captions: false,
+            rowHeight: 180,
+            margins: 5
+          }).on("jg.complete", function () {
+                lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+                    mousewheel: true,
+                    thumbnail: true,
+                    plugins: [lgZoom, lgThumbnail],
+                });
+          });
+
+
+        const lgContainer = document.getElementById("inline-gallery-container");
+        const inlineGallery = lightGallery(lgContainer, {
+            container: lgContainer,
+            dynamic: true,
+            hash: false,
+            closable: false,
+            showMaximizeIcon: true,
+            appendSubHtmlTo: ".lg-item",
+            slideDelay: 400,
+            plugins: [lgZoom, lgThumbnail],
+            dynamicEl: [
+                {
+                    src:
+                        "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+                    responsive:
+                        "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+                    thumb:
+                        "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+                },
+                {
+                    src:
+                        "https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+                    responsive:
+                        "https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
+                    thumb:
+                        "https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80"
+                },
+            ],
+            thumbWidth: 60,
+            thumbHeight: "40px",
+            thumbMargin: 4
+        });
+        inlineGallery.openGallery();
+    </script>
+    
 
     @livewireScripts
 </body>

@@ -5,6 +5,8 @@ use Illuminate\Support\Carbon;
 if (! function_exists('dday')) {
     function dday()
     {
+        setlocale(LC_TIME, 'vit');
+        Carbon::setLocale('vi');
         return Carbon::create(2023, 2, 25, 17);
     }
 }
