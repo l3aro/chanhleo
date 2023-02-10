@@ -8,6 +8,8 @@
                 <ul>
                     <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
                         <a href="{{ route('home') }}">Trang Chủ</a>
+                    </li>
+                    <li class="{{ request()->routeIs('story') ? 'active' : '' }}">
                         <a href="{{ route('story') }}">Tặng Quà</a>
                     </li>
                 </ul>
