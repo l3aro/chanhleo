@@ -7,13 +7,8 @@
             <div class="col-xs-10 text-right menu-1">
                 <ul>
                     <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
-                        <a href="{{ route('home') }}">Home</a>
-                    </li>
-                    <li class="{{ request()->routeIs('story') ? 'active' : '' }}">
-                        <a href="{{ route('story') }}">Story</a>
-                    </li>
-                    <li class="{{ request()->routeIs('gallery') ? 'active' : '' }}">
-                        <a href="{{ route('gallery') }}">Gallery</a>
+                        <a href="{{ route('home') }}">Trang Chủ</a>
+                        <a href="{{ route('story') }}">Tặng Quà</a>
                     </li>
                 </ul>
             </div>

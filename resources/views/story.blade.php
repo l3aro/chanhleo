@@ -1,9 +1,9 @@
 <x-layouts.base>
     <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner"
-        style="background-image:url({{ asset('landing/images/img_bg_1.jpg') }});">
+        style="background-image:url({{ asset('landing/images/img_bg_2.jpg') }});">
         <div class="overlay"></div>
         <div class="fh5co-container">
-            <div class="row">
+            <!--<div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <div class="display-t">
                         <div class="display-tc animate-box" data-animate-effect="fadeIn">
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </header>
 
@@ -23,10 +23,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                     <h2>Hello!</h2>
-                    <h3>
-                        {{ dday()->format('l jS F Y h:i A') }} {{ location() }}
-                    </h3>
-                    <p>We invited you to celebrate our wedding</p>
+                    <p>Bạn muốn gửi quà tặng và những lời chúc tốt đẹp tới Cô Dâu và Chú Rể?</p>
                 </div>
             </div>
             <div class="couple-wrap animate-box">
@@ -35,9 +32,8 @@
                         <img src="{{ asset('landing/images/groom.jpg') }}" alt="groom" class="img-responsive">
                     </div>
                     <div class="desc-groom">
-                        <h3>Joefrey Mahusay</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove</p>
+                        <h3>Đặng</h3>
+                        <h3>Trần Tiến</h3>
                     </div>
                 </div>
                 <p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -46,16 +42,28 @@
                         <img src="{{ asset('landing/images/bride.jpg') }}" alt="groom" class="img-responsive">
                     </div>
                     <div class="desc-bride">
-                        <h3>Sheila Mahusay</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in Bookmarksgrove</p>
+                        <h3>Trần</h3>
+                        <h3>Thị Anh</h3>
                     </div>
+                </div>
+            </div>
+    
+            <div id="fh5co-gift" class="fh5co-bg fh5co-cover-sm">
+                <img src="{{ asset('landing/images/stk.png') }}" class="img-responsive" style="margin: auto; text-align: center; padding-top: 50px">
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="padding-top: 50px; margin-bottom: 0px !important">
+                    
+                    <h2>Thank you</h2>
+                    <p>Cô Dâu - Chú Rể gửi lời cảm ơn chân thành tới bạn/cô chú/anh chị.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="fh5co-couple-story">
+    <!--<div id="fh5co-couple-story">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -120,5 +128,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 </x-layouts.base>

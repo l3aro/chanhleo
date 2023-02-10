@@ -16,6 +16,20 @@
             </div>
         </div>
     </header>
+    
+    <div id="container-upload">
+        @if (session('success'))
+            <strong>{{ session('success') }}</strong>
+        @endif
+         
+        <form action="{{ url('store') }}" method="post" enctype="multipart/form-data">
+            @csrf
+            <p>
+               Upload Image: <input type="file" name="upload_image" />
+            </p>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    </div>
 
     <div id="fh5co-couple" class="fh5co-section-gray">
         <div class="container">

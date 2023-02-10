@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Carbon;
+//use File;
 
 if (! function_exists('dday')) {
     function dday()
@@ -23,5 +24,25 @@ if (! function_exists('location')) {
         }
 
         return 'Hanoi, VN';
+    }
+}
+
+if (! function_exists('list_image')) {
+    function list_image()
+    {
+        //$files = File::files(public_path('storage/upload_images/'));
+        $files = array_filter(File::files(public_path('storage/upload_images/')), function ($item) {
+           return strpos($item, '.JPG');
+        });
+        $newArr = array_map(function ($item) {
+            list($width, $height, $type, $attr) = getimagesize($item->getPathname());
+            return [
+                'landscape' => ($width == 6720) ? 'true' : 'false', 
+                'name' => $item->getBasename('.JPG')
+            ];
+        }, $files);
+        //print_r($newArr);
+        //dd($files);
+        return $newArr;
     }
 }

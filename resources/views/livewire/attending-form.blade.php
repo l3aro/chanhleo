@@ -4,10 +4,20 @@
         <div class="row animate-box" wire:ignore.self>
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                 <h2>Bạn sẽ tham dự chứ?</h2>
-                <p>Hãy điền thông tin và gửi cho cô Dâu, chú Rể nếu bạn sẽ đến tham dự nhé. <3</p>
+                <p>Bạn muốn gửi quà tặng tới cho Cô Dâu - Chú Rể?</p>
             </div>
         </div>
-        <div class="row animate-box" wire:ignore.self>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <div class="display-t">
+                    <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                        <p><a href="/story" class="btn btn-default btn-sm" style="
+    padding: 15px 20px;" >Tặng quà cho Cô Dâu - Chú Rể</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="row animate-box" wire:ignore.self>
             <div class="col-md-10 col-md-offset-1">
                 <form class="form-inline" wire:submit.prevent="save">
                     <div class="col-md-4 col-sm-4">
@@ -33,6 +43,6 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </div>-->
     </div>
 </div>

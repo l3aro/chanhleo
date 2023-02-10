@@ -8,7 +8,7 @@
     <title>Trần Tiến &hearts; Tú Anh - Wedding</title>
 
     <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="{{ asset('preview_pic.png') }}" />
     <meta property="og:url" content="" />
     <meta property="og:site_name" content="" />
     <meta property="og:description" content="" />
@@ -164,24 +164,24 @@
             closable: false,
             showMaximizeIcon: true,
             appendSubHtmlTo: ".lg-item",
-            slideDelay: 400,
+            //slideDelay: 400,
             plugins: [lgZoom, lgThumbnail],
             dynamicEl: [
                 {
                     src:
-                        "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+                        "{{ asset('storage/upload_images/4S4A2403.JPG') }}",
                     responsive:
-                        "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+                        "{{ asset('storage/upload_images/4S4A2403.JPG') }}",
                     thumb:
-                        "https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+                        "{{ asset('storage/upload_images/thumbnail/4S4A2403_thumb.JPG') }}"
                 },
                 {
                     src:
-                        "https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+                        "{{ asset('storage/upload_images/4S4A2410.JPG') }}",
                     responsive:
-                        "https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=480&q=80 480, https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800",
+                        "{{ asset('storage/upload_images/4S4A2410.JPG') }}",
                     thumb:
-                        "https://images.unsplash.com/photo-1473876988266-ca0860a443b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80"
+                        "{{ asset('storage/upload_images/thumbnail/4S4A2410_thumb.JPG') }}"
                 },
             ],
             thumbWidth: 60,
