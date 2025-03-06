@@ -26,7 +26,8 @@
                     <h2>Hello!</h2>
                     <p>Xin trân trọng kính mới các ông bà/cô chú/anh chị tới tham dự đám cưới của<br>Trần Tiến và Tú Anh</p>
                     <h3>
-                        {{ dday()->format('l jS F Y h:i A') }} </br>{{ location() }}
+                        <!--{{ dday()->format('l jS F Y h:i A') }} </br>{{ location() }}-->
+                        Thứ 7, ngày 25 tháng 02 năm 2023, 05:00 PM
                     </h3>
                 </div>
             </div>
@@ -54,6 +55,14 @@
                 </div>
             </div>
         </div>
+    </div>
+    
+    <div id="fh5co-message" class="fh5co-section-gray fh5co-bg fh5co-cover-sm animate-box" style="padding-top: 50px; padding-bottom: 50px">
+        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+            <h2>Thiệp Cưới</h2>
+            <p>Thiệp cưới do Chú Rể tự thiết kế riêng mang phong cách hiện đại, trẻ trung.</p>
+        </div>
+        <img src="{{ asset('landing/images/ThiepCuoi_v2.png') }}" class="img-responsive" style="margin: auto; text-align: center;">
     </div>
 
     <div id="fh5co-event" class="fh5co-bg" style="background-image:url({{ asset('landing/images/img_bg_3.jpg') }});">

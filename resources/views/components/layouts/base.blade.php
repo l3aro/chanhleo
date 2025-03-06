@@ -129,7 +129,7 @@
         simplyCountdown('.simply-countdown-one', {
             year: 2023,
             month: 2,
-            day: 25,
+            day: 26,
             hour: 17,
         });
 

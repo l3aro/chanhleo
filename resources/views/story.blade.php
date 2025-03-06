@@ -57,7 +57,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="padding-top: 50px; margin-bottom: 0px !important">
                     
                     <h2>Thank you</h2>
-                    <p>Cô Dâu - Chú Rể gửi lời cảm ơn chân thành tới bạn/cô chú/anh chị.</p>
+                    <p>Cô Dâu - Chú Rể gửi lời cảm ơn chân thành tới các bạn/cô chú/anh chị.</p>
                 </div>
             </div>
         </div>
